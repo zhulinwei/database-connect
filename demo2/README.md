@@ -1,5 +1,5 @@
-### mongodb_demo1
+### mongodb_demo2
 a demo use node-mongodb-native to connect to mongoDB
 
 #### attention
-this demo is use of mongodb@2.2, if you want to use the lastest mongodb driver(now it's 3.0), you can look at mongodb_demo3
+this demo is use of mongodb@3.0, if you want to use the previous mongodb driver(mongodb@2.2), you can look at mongodb_demo1
