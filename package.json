@@ -1,0 +1,17 @@
+{
+  "name": "mongodb_demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Level.Z",
+  "license": "ISC",
+  "dependencies": {
+    "co": "^4.6.0",
+    "koa": "^2.4.1",
+    "koa-router": "^7.4.0",
+    "mongodb": "^2.2.34"
+  }
+}
