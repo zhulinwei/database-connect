@@ -10,7 +10,7 @@ class MongoDB {
   }
   async init() {
     const keys = Object.keys(config);
-    const connections = await Promise.all(keys.map(async key => {
+    await Promise.all(keys.map(async key => {
       let url = config[key].url || '';
       let options = config[key].options || {};
       let client = await MongoClient.connect(url, options);
