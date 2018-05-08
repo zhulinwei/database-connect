@@ -1,8 +1,12 @@
-function getEnv(name) { return process.env[name] };
-
 module.exports = {
   mongodb: {
-    url: getEnv("MONGODB"),
-    options: {},
+    test1: {
+      url: process.env.MONGODB,
+      options: {},
+    },
+    test2: {
+      url: process.env.MONGODB,
+      options: {},
+    }
   }
 }

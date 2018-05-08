@@ -3,20 +3,20 @@ const MongoClient = require('mongodb').MongoClient;
 
 class MongoDB {
   constructor() {
-    this.mongo = {};
+    this.dbs = {};
   }
   client () {
     return this.mongo;
   }
   async init() {
-    const url = config['url'] || '';
-    const options = config['options'] || {};
-    try {
-      this.mongo = await MongoClient.connect(url, options);
-    } catch (err) {
-      console.log(err);
-    }
-    return this.mongo;
+    const keys = Object.keys(config);
+    const connections = await Promise.all(keys.map(async key => {
+      let url = config[key].url || '';
+      let options = config[key].options || {};
+      let client = await MongoClient.connect(url, options);
+      this.dbs[key] = client.db(key);
+    }));
+    return this.dbs;
   }
 }
 
