@@ -14,7 +14,8 @@ class MongoDB {
       let url = config[key].url || '';
       let options = config[key].options || {};
       let client = await MongoClient.connect(url, options);
-      this.dbs[key] = client.db(key);
+      const dbName = client.s.options.dbName;
+      this.dbs[key] = client.db(dbName);
     }));
     return this.dbs;
   }
