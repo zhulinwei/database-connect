@@ -12,6 +12,6 @@ router.get('/query', Ctrl.query);
 router.get('/_/readme.md', ctx => {
   ctx.set({ 'Content-Type': 'text/markdown' });
   ctx.body = fs.createReadStream('./README.md');
-})
+});
 
 module.exports = router;

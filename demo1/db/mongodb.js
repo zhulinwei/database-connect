@@ -2,13 +2,13 @@ const config = require('../config').mongodb;
 const MongoClient = require('mongodb').MongoClient;
 
 class MongoDB {
-  constructor() {
+  constructor () {
     this.dbs = {};
   }
   db () {
     return this.dbs;
   }
-  async init() {
+  async init () {
     const keys = Object.keys(config);
     const connections = keys.map(key => {
       let url = config[key]['url'] || '';

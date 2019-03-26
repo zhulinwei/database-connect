@@ -1,5 +1,5 @@
 class BaseModel {
-  query(selector, options, callback) {
+  query (selector, options, callback) {
     let cursor = this.coll.find(selector);
     if (options) {
       cursor = options.sort ? cursor.sort(options.sort) : cursor;

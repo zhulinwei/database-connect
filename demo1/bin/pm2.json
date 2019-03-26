@@ -1,3 +1,16 @@
+// {
+//   "apps" : [{
+//     "name"        : "mongodb_demo1",
+//     "script"      : "./app.js",
+//     "watch"       : true,
+//     "env": {
+//       "PORT": 3000,
+//       "NODE_ENV": "development",
+//       "MONGODB_TEST1": "mongodb://localhost:27017/test1",
+//       "MONGODB_TEST2": "mongodb://localhost:27017/test2"
+//     }
+//   }]
+// }
 {
   "apps" : [{
     "name"        : "mongodb_demo1",
@@ -6,8 +19,7 @@
     "env": {
       "PORT": 3000,
       "NODE_ENV": "development",
-      "MONGODB_TEST1": "mongodb://localhost:27017/test1",
-      "MONGODB_TEST2": "mongodb://localhost:27017/test2"
+      "MONGODB_TEST1": "mongodb://Level.Z:zhulinwei123@47.244.9.63:7002/cms",
     }
   }]
 }

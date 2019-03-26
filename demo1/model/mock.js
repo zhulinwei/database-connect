@@ -3,9 +3,9 @@ const db = mongo.db();
 
 const BaseModel = require('./base');
 class Mock extends BaseModel {
-  constructor() {
+  constructor () {
     super();
-    this.coll = db.test1.collection("mock");
+    this.coll = db.test1.collection('mock');
   }
 }
 

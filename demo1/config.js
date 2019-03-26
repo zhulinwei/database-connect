@@ -1,14 +1,15 @@
-function getEnv(name) { return process.env[name] };
+// function getEnv(name) { return process.env[name] };
+const getEnv = (name) => process.env[name];
 
 module.exports = {
   mongodb: {
     test1: {
-      url: getEnv("MONGODB_TEST1"),
-      options: {},
+      url: getEnv('MONGODB_TEST1'),
+      options: {}
     },
     test2: {
-      url: getEnv("MONGODB_TEST2"),
-      options: {},
-    },
+      url: getEnv('MONGODB_TEST2'),
+      options: {}
+    }
   }
-}
+};
