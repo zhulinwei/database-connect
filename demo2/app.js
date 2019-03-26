@@ -1,9 +1,9 @@
 
-const koa = require('koa');
+const Koa = require('koa');
 const PORT = process.env.PORT;
 const { mongo } = require('./db');
 
-const app = new koa();
+const app = new Koa();
 // 注意：一旦存在多个需要初始化的对象时，mong.init().then()...的写法将不再合适，改进方法可以参考demo1
 mongo.init()
   .then(data => {

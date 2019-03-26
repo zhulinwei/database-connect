@@ -1,2 +1,3 @@
-const Mock = require('./mock');
-module.exports = { Mock };
+module.exports = {
+  Mock: require('./mock')
+};

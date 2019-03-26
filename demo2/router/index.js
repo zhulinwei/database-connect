@@ -14,4 +14,4 @@ router.get('/_/readme.md', ctx => {
   ctx.body = fs.createReadStream('./README.md');
 })
 
-module.exports = router;
+module.exports = router
