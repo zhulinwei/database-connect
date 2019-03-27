@@ -16,7 +16,7 @@ class MongoDB {
       return MongoClient.connect(url, options);
     });
     const result = await Promise.all(connections);
-    keys.forEach((name, index) => this.dbs[name] = result[index]);
+    keys.forEach((name, index) => { this.dbs[name] = result[index]; });
     return this.dbs;
   }
 }

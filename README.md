@@ -1,9 +1,11 @@
-# mongodb
-# mongodb_demo
-some demos using the node-mongodb-native driver to connect to MongoDB
+# database-connect-demo
 
-## mongodb_demo1
-mongodb@2.2 async/await
 
-## mongodb_demo2
-mongodb@3.0 async/await
+## demo1
+some demos using the node-mongodb-native driver (mongodb@2.2) to connect MongoDB
+
+## demo2
+some demos using the node-mongodb-native driver (mongodb@3.0) to connect MongoDB
+
+## demo3
+some demos using redis driver to connect Redis
